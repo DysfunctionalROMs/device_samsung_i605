@@ -5,15 +5,16 @@ PRODUCT_RELEASE_NAME := i605
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 
-# Inherit some common CYANIDE stuff.
-$(call inherit-product, vendor/cyanide/config/common_full_phone.mk)
+# Inherit some common Broken stuff.
+$(call inherit-product, vendor/broken/config/cdma.mk)
+$(call inherit-product, vendor/broken/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/i605/full_i605.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := i605
-PRODUCT_NAME := cyanide_i605
+PRODUCT_NAME := broken_i605
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SCH-I605
 PRODUCT_MANUFACTURER := samsung
